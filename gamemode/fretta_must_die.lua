@@ -138,7 +138,7 @@ function GM:StartFrettaVote()
       GAMEMODE:StartMapVote()
    else
       -- switching gamemodes, so remove ttt-specific tags
-      //GAMEMODE:UpdateServerTags(true)
+      --GAMEMODE:UpdateServerTags(true)
 
       GAMEMODE.BaseClass.StartGamemodeVote(GAMEMODE)
    end

@@ -9,7 +9,7 @@ IncludeClientFile("cl_lang.lua")
 
 -- Add all lua files in our /lang/ dir
 local dir = GM.FolderName or "terrortown_gold"
-for _, fname in pairs(file.FindInLua(dir .. "/gamemode/lang/*.lua")) do
+for _, fname in pairs(file.FindInLua(dir .. "/gamemode/lang--[[.lua")) do
    local path = "lang/" .. fname
    -- filter out directories and temp files (like .lua~)
    if (not file.IsDir(path)) and string.Right(fname, 3) == "lua" then

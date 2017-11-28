@@ -28,22 +28,22 @@ function ENT:Draw()
 end
 
 function ENT:Initialize()
-	//self:SetModel( "models/weapons/w_missile.mdl" )
-	//self:SetModel( "models/alyx.mdl" )
-	//local rand = math.random(2,2) 
-	//if (rand == 1) then
-	//	self.Mod = "barney"
-	//	self:SetModel( "models/barney.mdl" )
-	//elseif (rand == 2) then
+	--self:SetModel( "models/weapons/w_missile.mdl" )
+	--self:SetModel( "models/alyx.mdl" )
+	--local rand = math.random(2,2) 
+	--if (rand == 1) then
+	--	self.Mod = "barney"
+	--	self:SetModel( "models/barney.mdl" )
+	--elseif (rand == 2) then
 		self.Mod = "alyx"
 		self:SetModel( "models/alyx.mdl" )
-	//elseif (rand == 3) then
-	//	self.Mod = "baby"
-	//	self:SetModel( "models/props_c17/doll01.mdl" )
-	//elseif (rand == 4) then
-	//	self.Mod = "melon"
-	//	self:SetModel( "models/props_junk/watermelon01.mdl" )
-	//end
+	--elseif (rand == 3) then
+	--	self.Mod = "baby"
+	--	self:SetModel( "models/props_c17/doll01.mdl" )
+	--elseif (rand == 4) then
+	--	self.Mod = "melon"
+	--	self:SetModel( "models/props_junk/watermelon01.mdl" )
+	--end
     if(CLIENT) then 
 		self.Entity:SetRenderBoundsWS( Vector(-90000,-90000,-90000), Vector(90000,90000,90000) )
 		self:SetRenderBoundsWS( Vector(-90000,-90000,-90000), Vector(90000,90000,90000) )
@@ -67,11 +67,11 @@ function ENT:Initialize()
 	bloodeffect:Activate() 
 	bloodeffect:Fire( "Start", "", 0 )
 	bloodeffect:SetParent(self.Entity)
-	/*if (self.Mod == "melon") then
+	--[[if (self.Mod == "melon") then
 		self.Trail = util.SpriteTrail(self.Entity, 0, Color(255,255,255), false, 32, 16, 12, 1/(40+1)*0.5, "cunt/_f2.vmt")
 	else
 		self.Trail = util.SpriteTrail(self.Entity, 0, Color(255,255,255), false, 128, 64, 12, 1/(40+1)*0.5, "cunt/_hello.vmt")
-	end*/
+	end]]
 	self.LastSound = -1
 end
 
@@ -122,7 +122,7 @@ function ENT:Think()
 			util.BlastDamage(inflictor, attacker, position, radius, damage)
 			
 			local effectdata = EffectData()
-			effectdata:SetStart( position ) // not sure if we need a start and origin (endpoint) for this effect, but whatever
+			effectdata:SetStart( position ) -- not sure if we need a start and origin (endpoint) for this effect, but whatever
 			effectdata:SetOrigin( position )
 			effectdata:SetScale( 1 )
 			util.Effect( "Explosion", effectdata )	
@@ -142,10 +142,10 @@ function ENT:Think()
 			local dist = self.Entity:GetPos():Distance(self.Target:GetPos()+Vector(0,0,64))
 			
 			pitch = 150-(dist/14)
-			//self.LastSound = CurTime() + (dist/100)*0.1
+			--self.LastSound = CurTime() + (dist/100)*0.1
 			self.LastSound = CurTime() + 0.8
 			
-			//self.Entity:EmitSound("npc/roller/mine/rmine_blip3.wav",80,math.Clamp(pitch, 50,150))
+			--self.Entity:EmitSound("npc/roller/mine/rmine_blip3.wav",80,math.Clamp(pitch, 50,150))
 			if (self.Mod == "barney") then
 				self.Entity:EmitSound("cunt/barney.wav",80,math.Clamp(pitch, 80,120))
 			elseif (self.Mod == "alyx") then
@@ -171,7 +171,7 @@ end
 
 function ENT:OnRemove()
     if(CLIENT) then return end
-	//self.Trail:Remove()
+	--self.Trail:Remove()
 end
 
 function ENT:UpdateTransmitState() return TRANSMIT_ALWAYS end;

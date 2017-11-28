@@ -78,7 +78,7 @@ function SWEP:PrimaryAttack()
 		end
 	end
    
-	//self.Weapon:EmitSound("npc/dog/dog_servo6.wav")
+	--self.Weapon:EmitSound("npc/dog/dog_servo6.wav")
 	self.Owner:SetAnimation( PLAYER_ATTACK1 );
 	self.Weapon:SendWeaponAnim( ACT_VM_PRIMARYATTACK );
 	
@@ -176,18 +176,18 @@ function SWEP:StabKill(tr, spos, sdest)
    local ignore = self.Owner
 
    target.effect_fn = function(rag)
-	   /*local bone = rag:LookupBone("ValveBiped.Bip01_Pelvis")
+	   --[[local bone = rag:LookupBone("ValveBiped.Bip01_Pelvis")
 	   local BonePos , BoneAng = rag:GetBonePosition(bone )
 	   local pos = BonePos;
 		local ang = BoneAng;
 		ang:RotateAroundAxis(ang:Right(), -90);
 		pos = pos + (ang:Forward() * 4)
-		pos = pos + (ang:Right() * 4)*/
+		pos = pos + (ang:Right() * 4)]]
 
-		 /*local knife = ents.Create("prop_physics")
+		 --[[local knife = ents.Create("prop_physics")
 		 knife:SetModel("models/jaanus/dildo.mdl")
 		 knife:SetPos(pos)
-		 //knife:SetCollisionGroup(COLLISION_GROUP_DEBRIS)
+		 --knife:SetCollisionGroup(COLLISION_GROUP_DEBRIS)
 		 knife:SetAngles(ang)
 		 knife.CanPickup = false
 
@@ -196,7 +196,7 @@ function SWEP:StabKill(tr, spos, sdest)
 		 local phys = knife:GetPhysicsObject()
 		 if IsValid(phys) then
 			phys:EnableCollisions(true)
-		 end*/
+		 end]]
 	  end
 
 
@@ -206,7 +206,7 @@ function SWEP:StabKill(tr, spos, sdest)
    -- target appears to die right there, so we could theoretically get to
    -- the ragdoll in here...
 
-   //self:Remove()      
+   --self:Remove()      
 end
 
 
@@ -281,7 +281,7 @@ if CLIENT then
    end
 end
 
-//SWEP.d = CurTime();
+--SWEP.d = CurTime();
 
 function SWEP:Think()
 	if SERVER then

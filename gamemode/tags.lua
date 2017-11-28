@@ -85,5 +85,5 @@ function GM:UpdateServerTags(remove_only)
       Dev(1, "Adding to sv_tags: " .. tags_new)
    end
 
-   //RunConsoleCommand("sv_tags", tags_old .. tags_new)
+   --RunConsoleCommand("sv_tags", tags_old .. tags_new)
 end

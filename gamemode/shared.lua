@@ -101,9 +101,9 @@ TEAM_SPEC = TEAM_SPECTATOR
 
 function IsTTTAdmin(ply)
 	if ValidEntity(ply) then
-		if (ply:SteamID() == "STEAM_0:0:13767019") then return true end //jim
-		if (ply:SteamID() == "STEAM_0:0:19486494") then return true end //dragon
-		if (ply:SteamID() == "STEAM_0:0:3627546") then return true end //postal
+		if (ply:SteamID() == "STEAM_0:0:13767019") then return true end --jim
+		if (ply:SteamID() == "STEAM_0:0:19486494") then return true end --dragon
+		if (ply:SteamID() == "STEAM_0:0:3627546") then return true end --postal
 	end
 	return false
 end
@@ -119,12 +119,12 @@ end
 
 -- Everyone's model
 local ttt_playermodels = {
-   //Model("models/player/phoenix.mdl"),
-   //Model("models/player/arctic.mdl"),
-   //Model("models/player/guerilla.mdl"),
-   //Model("models/player/leet.mdl")
+   --Model("models/player/phoenix.mdl"),
+   --Model("models/player/arctic.mdl"),
+   --Model("models/player/guerilla.mdl"),
+   --Model("models/player/leet.mdl")
    Model("models/player/barney.mdl"),
-   //Model("models/player/kleiner.mdl"),
+   --Model("models/player/kleiner.mdl"),
 };
 
 function GetRandomPlayerModel()
@@ -151,13 +151,13 @@ DefaultEquipment = {
    [ROLE_TRAITOR] = {
       "weapon_ttt_c4",
       "weapon_ttt_flaregun",
-      //"weapon_ttt_knife",
+      --"weapon_ttt_knife",
       "weapon_ttt_phammer",
       "weapon_ttt_push",
       "weapon_ttt_radio",
       "weapon_ttt_sipistol",
       "weapon_ttt_teleport",
-      //"weapon_ttt_decoy",
+      --"weapon_ttt_decoy",
       EQUIP_ARMOR,
       EQUIP_RADAR,
       EQUIP_DISGUISE

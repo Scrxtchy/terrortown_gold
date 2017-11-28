@@ -215,7 +215,7 @@ function plymeta:SetSpeed(slowed, boost)
 		speedMul = wep.PlayerSpeedMod
 	end
 
-	if (self.IsPin) then //Are they a pin? Just freeze them.
+	if (self.IsPin) then --Are they a pin? Just freeze them.
 		self:SetWalkSpeed(1)
 		self:SetRunSpeed(1)
 		self:SetMaxSpeed(1)

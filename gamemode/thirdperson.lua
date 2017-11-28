@@ -1,12 +1,12 @@
-// By cringerpants. You can email me at cringerpants@phuce.com.
-/*
+-- By cringerpants. You can email me at cringerpants@phuce.com.
+--[[
 AddCSLuaFile("thirdperson.lua")
 
 ThirdPerson = {}
 
-// -----------------------------------------------------------------------------
-// CLIENT
-// -----------------------------------------------------------------------------
+-- -----------------------------------------------------------------------------
+-- CLIENT
+-- -----------------------------------------------------------------------------
 
 if CLIENT then
 
@@ -42,7 +42,7 @@ function ThirdPerson.CalcView(player, pos, angles, fov)
 				targetpos = targetpos + player:GetForward() * -5
 		end 
 
-		// tween to the target position
+		-- tween to the target position
 		pos = player:GetVar("thirdperson_pos") or targetpos
 		if smooth != 0 then
 			pos.x = math.Approach(pos.x, targetpos.x, math.abs(targetpos.x - pos.x) * smoothscale)
@@ -53,8 +53,8 @@ function ThirdPerson.CalcView(player, pos, angles, fov)
 		end
 		player:SetVar("thirdperson_pos", pos)
 
-		// offset it by the stored amounts, but trace so it stays outside walls
-		// we don't tween this so the camera feels like its tightly following the mouse
+		-- offset it by the stored amounts, but trace so it stays outside walls
+		-- we don't tween this so the camera feels like its tightly following the mouse
 		local offset = Vector(5, 5, 5)
 		if player:GetVar("thirdperson_zoom") != 1 then
 			offset.x = GetConVarNumber("chasecam_back")
@@ -78,7 +78,7 @@ function ThirdPerson.CalcView(player, pos, angles, fov)
 		end
 		player:SetVar("thirdperson_viewpos", pos)
 
-		// tween the fov
+		-- tween the fov
 		fov = player:GetVar("thirdperson_fov") or targetfov
 		if smooth != 0 then
 			fov = math.Approach(fov, targetfov, math.abs(targetfov - fov) * smoothscale)
@@ -92,15 +92,15 @@ function ThirdPerson.CalcView(player, pos, angles, fov)
 end
 hook.Add("CalcView", "ThirdPerson.CalcView", ThirdPerson.CalcView)
 
-// thanks to termy58's crosshair example
-// ... and thanks to termy58 for finding my stupid bug :P
+-- thanks to termy58's crosshair example
+-- ... and thanks to termy58 for finding my stupid bug :P
 function ThirdPerson.HUDPaint()
 	local player = LocalPlayer()
 	if player:GetNetworkedInt("thirdperson") == 0 then
 		return
 	end
 
-	// trace from muzzle to hit pos
+	-- trace from muzzle to hit pos
 	local t = {}
 	t.start = player:GetShootPos()
 	t.endpos = t.start + player:GetAimVector() * 9000
@@ -112,7 +112,7 @@ function ThirdPerson.HUDPaint()
 	local offset = size * 0.5
 	local offset2 = offset - (size * 0.1)
 
-	// trace from camera to hit pos, if blocked, red cursor
+	-- trace from camera to hit pos, if blocked, red cursor
 	t = {}
 	t.start = player:GetVar("thirdperson_viewpos") or player:GetPos()
 	t.endpos = tr.HitPos + tr.HitNormal * 5
@@ -148,9 +148,9 @@ function ThirdPerson.Zoom(player, command, arguments)
 end
 concommand.Add("chasecam_zoom", ThirdPerson.Zoom)
 
-// -----------------------------------------------------------------------------
-// SERVER
-// -----------------------------------------------------------------------------
+-- -----------------------------------------------------------------------------
+-- SERVER
+-- -----------------------------------------------------------------------------
 
 else 
 
@@ -198,4 +198,4 @@ function ThirdPerson.Enable(player)
 end
 
 end
-*/
+]]

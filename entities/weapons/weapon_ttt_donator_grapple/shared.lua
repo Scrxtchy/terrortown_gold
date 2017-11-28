@@ -1,4 +1,4 @@
-//Grappling weapons for Natrox
+--Grappling weapons for Natrox
 
 if SERVER then
    AddCSLuaFile( "shared.lua" )
@@ -67,7 +67,7 @@ end
 function SWEP:DoTrace( endpos )
 	local trace = {}
 		trace.start = self.Owner:GetShootPos()
-		trace.endpos = trace.start + (self.Owner:GetAimVector() * 14096) //14096 is length modifier.
+		trace.endpos = trace.start + (self.Owner:GetAimVector() * 14096) --14096 is length modifier.
 		if(endpos) then trace.endpos = (endpos - self.Tr.HitNormal * 7) end
 		trace.filter = { self.Owner, self.Weapon }
 		
@@ -76,14 +76,14 @@ function SWEP:DoTrace( endpos )
 end
 
 function SWEP:StartAttack()
-	//Get begining and end poins of trace.
-	local gunPos = self.Owner:GetShootPos() //Start of distance trace.
-	local disTrace = self.Owner:GetEyeTrace() //Store all results of a trace in disTrace.
-	local hitPos = disTrace.HitPos //Stores Hit Position of disTrace.
+	--Get begining and end poins of trace.
+	local gunPos = self.Owner:GetShootPos() --Start of distance trace.
+	local disTrace = self.Owner:GetEyeTrace() --Store all results of a trace in disTrace.
+	local hitPos = disTrace.HitPos --Stores Hit Position of disTrace.
 			
 	
-	//Calculate Distance
-	//Thanks to rgovostes for this code.
+	--Calculate Distance
+	--Thanks to rgovostes for this code.
 	local x = (gunPos.x - hitPos.x)^2;
 	local y = (gunPos.y - hitPos.y)^2;
 	local z = (gunPos.z - hitPos.z)^2;
@@ -97,8 +97,8 @@ function SWEP:StartAttack()
 	if inRange then
 		if (SERVER) then
 			
-			if (!self.Beam) then //If the beam does not exist, draw the beam.
-				//grapple_beam
+			if (!self.Beam) then --If the beam does not exist, draw the beam.
+				--grapple_beam
 				self.Beam = ents.Create( "grapple_trace" )
 					self.Beam:SetPos( self.Owner:GetShootPos() )
 				self.Beam:Spawn()
@@ -110,7 +110,7 @@ function SWEP:StartAttack()
 		end
 		
 		self:DoTrace()
-		self.speed = 10000 //Rope latch speed. Was 3000.
+		self.speed = 10000 --Rope latch speed. Was 3000.
 		self.startTime = CurTime()
 		self.endTime = CurTime() + self.speed
 		self.dtime = -1
@@ -123,7 +123,7 @@ function SWEP:StartAttack()
 		
 		self.Owner:EmitSound( sndPowerDown )
 	else
-		//Play A Sound
+		--Play A Sound
 		self.Owner:EmitSound( sndTooFar )
 	end
 end
@@ -169,7 +169,7 @@ function SWEP:UpdateAttack()
 				vVel = vVel:GetNormalized()*(math.Clamp(Distance,0,7))
 				if( SERVER ) then
 				local gravity = GetConVarNumber("sv_Gravity")
-				vVel:Add(Vector(0,0,(gravity/100)*1.5)) //Player speed. DO NOT MESS WITH THIS VALUE!
+				vVel:Add(Vector(0,0,(gravity/100)*1.5)) --Player speed. DO NOT MESS WITH THIS VALUE!
 				if(zVel < 0) then
 					vVel:Add(Vector(0,0,zVel/75))
 				end

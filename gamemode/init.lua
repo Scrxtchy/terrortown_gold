@@ -41,7 +41,7 @@ AddCSLuaFile("vgui/sb_info.lua")
 AddCSLuaFile("cl_jim.lua")
 AddCSLuaFile("thirdperson.lua")
 
-//anim
+--anim
 include("resources.lua")
 include("shared.lua")
 
@@ -205,13 +205,13 @@ function GM:Initialize()
       ErrorNoHalt("WARNING: CS:S does not appear to be mounted by GMod. Things may break in strange ways. Server admin? Check the TTT readme for help.\n")
    end
 
-   //GAMEMODE:CheckFileConsistency()
+   --GAMEMODE:CheckFileConsistency()
 end
 
 function GM:InitPostEntity()
    self.Customized = WEPS.HasCustomEquipment()
 
-   //self:UpdateServerTags()
+   --self:UpdateServerTags()
 end
 
 function GM:GetGameDescription() return self.Name end
@@ -436,7 +436,7 @@ function GM:TTTDelayRoundStartForVote()
 end
 
 function PrepareRound()
-   //GAMEMODE:UpdateServerTags()
+   --GAMEMODE:UpdateServerTags()
 
    -- Check playercount
    if CheckForAbort() then return end

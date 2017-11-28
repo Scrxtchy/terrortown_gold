@@ -469,9 +469,9 @@ local function SpecUseKey(ply, cmd, arg)
 			end
 		end
 		
-		//ErrorNoHalt(Format("Target %s dist %i to ply %i",v:GetClass(),dist, distToPly)) 
+		--ErrorNoHalt(Format("Target %s dist %i to ply %i",v:GetClass(),dist, distToPly)) 
 		if (ourtargent != -1 && ValidEntity(ourtargent)) then 
-			//ErrorNoHalt(Format("Picking %s, %i",ourtargent:GetClass(),ourtargdist)) 
+			--ErrorNoHalt(Format("Picking %s, %i",ourtargent:GetClass(),ourtargdist)) 
 			PROPSPEC_A.Target(ply, ourtargent,1)
 		end		
 	  end
@@ -673,7 +673,7 @@ function GM:DoPlayerDeath(ply, attacker, dmginfo)
    ply:StripAll()
 
    -- Tell the client to send their chat contents
-   //ply:SendLastWords(dmginfo)
+   --ply:SendLastWords(dmginfo)
 
    local killwep = util.WeaponFromDamage(dmginfo)
 

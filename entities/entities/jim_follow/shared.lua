@@ -108,7 +108,7 @@ function ENT:Think()
 		return
 	end
 	
-	self.Entity:SetAngles( ( (self.Target:EyePos()+Vector(self.offsetX,self.offsetY,self.offsetZ)) - self.Entity:GetPos() ):Angle() )  //Point at our target.
+	self.Entity:SetAngles( ( (self.Target:EyePos()+Vector(self.offsetX,self.offsetY,self.offsetZ)) - self.Entity:GetPos() ):Angle() )  --Point at our target.
 
 	local dist = self.Entity:GetPos():Distance(self.Target:GetPos()+Vector(0,0,64))
 	if (dist > 150) then
@@ -120,7 +120,7 @@ function ENT:Think()
 		
 		local dist = self.Entity:GetPos():Distance(self.Target:GetPos()+Vector(0,0,64))			
 		pitch = 150-(dist/14)
-		//self.LastSound = CurTime() + (dist/100)*0.1
+		--self.LastSound = CurTime() + (dist/100)*0.1
 		self.LastSound = CurTime() + (math.random(8,20)/10)
 		if (dist < 160) then
 			self.Entity:EmitSound("cunt/onlymelon.wav",60,self.pitch)

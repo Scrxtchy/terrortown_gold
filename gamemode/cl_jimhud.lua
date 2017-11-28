@@ -91,7 +91,7 @@ function JimHUDPaint()
 		datastream.StreamToServer( "MeatHook", { ["mat"] = "" } );
 	end
 	
-	//MELON INDICATOR
+	--MELON INDICATOR
 	local specEnt = client:GetNWEntity("spec_ent");
 	if (specEnt && specEnt != NULL && IsValid(specEnt) && specEnt.ResizableProp) then
 	

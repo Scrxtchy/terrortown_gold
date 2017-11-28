@@ -1,4 +1,4 @@
-//Grappling weapons for Natrox
+--Grappling weapons for Natrox
 
 if SERVER then
 	AddCSLuaFile( "shared.lua" )

@@ -23,9 +23,9 @@ function ENT:Initialize()
     self:PhysicsInit( SOLID_VPHYSICS )
 	local phys = self:GetPhysicsObject();
 	if (IsValid(phys)) then phys:EnableDrag(false) end
-	//self:GetPhysicsObject():SetMass(10000)
-	//self.Entity:GetPhysicsObject():SetMass(10000)
-	//self.trail = util.SpriteTrail(self.Entity, 0, Color(255,255,255), true, 15, 0, 10, 1/(15)*0.5, "jim/trail.vmt")	
+	--self:GetPhysicsObject():SetMass(10000)
+	--self.Entity:GetPhysicsObject():SetMass(10000)
+	--self.trail = util.SpriteTrail(self.Entity, 0, Color(255,255,255), true, 15, 0, 10, 1/(15)*0.5, "jim/trail.vmt")	
 end
 
 function ENT:SetPlayer(ply)

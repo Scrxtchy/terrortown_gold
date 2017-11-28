@@ -1,14 +1,14 @@
 if CLIENT then return end
 
-function AddDir(dir) // recursively adds everything in a directory to be downloaded by client
-        local list = file.FindDir("../"..dir.."/*")
+function AddDir(dir) -- recursively adds everything in a directory to be downloaded by client
+        local list = file.FindDir("../"..dir.."--[[")
         for _, fdir in pairs(list) do
-                if fdir != ".svn" then // don't spam people with useless .svn folders
+                if fdir != ".svn" then -- don't spam people with useless .svn folders
                         AddDir(dir.."/"..fdir)
                 end
         end
 
-        for k,v in pairs(file.Find("../"..dir.."/*")) do
+        for k,v in pairs(file.Find("../"..dir.."--[[")) do
                 AddFile(dir.."/"..v)
         end
 end
@@ -20,7 +20,7 @@ function AddFile(filein)
 	end
 
 	if (string.find(filein,"bz2") || string.find(filein,".git")) then 
-		//Msg(" - SKIPPING "..file.."\n")
+		--Msg(" - SKIPPING "..file.."\n")
 		return
 	end
 	
@@ -45,13 +45,13 @@ function AddMat(file)
 	AddFile(file..".vtf")
 end	
 	
-//AddDir("materials/models/gnin")
-//AddDir("models/gnin")
+--AddDir("materials/models/gnin")
+--AddDir("models/gnin")
 
-//AddDir("sound/cunt")
-//AddDir("materials/cunt")
-//AddFile("materials/Alters.vmt")
-//AddFile("materials/Alters.vtf")
+--AddDir("sound/cunt")
+--AddDir("materials/cunt")
+--AddFile("materials/Alters.vmt")
+--AddFile("materials/Alters.vtf")
 
 AddFile("materials/VGUI/ttt/score_logo_bbb.vmt")
 AddFile("materials/VGUI/ttt/score_logo_bbb.vtf")

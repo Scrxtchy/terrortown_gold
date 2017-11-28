@@ -5,7 +5,7 @@ ENT.RenderGroup = RENDERGROUP_OPAQUE
 ENT.PrintName = "Rocket"
 ENT.Spawnable = false
 ENT.AdminSpawnable = false
-ENT.trigger = 200 //danger zoneeee
+ENT.trigger = 200 --danger zoneeee
 ENT.pitch = 80
 ENT.active = false
 ENT.triggered = false
@@ -90,12 +90,12 @@ function ENT:Think()
 				if self.explodewatch < CurTime() then
 					self.Entity:StopSound("ambient/creatures/teddy.wav")
 					
-					explode = ents.Create( "env_explosion" ) //creates the explosion
+					explode = ents.Create( "env_explosion" ) --creates the explosion
 					explode:SetPos(self:GetPos()  )
-					//explode:SetOwner( self.owner ) // this sets you as the person who made the explosion
-					explode:Spawn() //this actually spawns the explosion
-					explode:SetKeyValue( "iMagnitude", "80" ) //the damage
-					explode:SetKeyValue( "iRadiusOverride", "300" ) //the rad
+					--explode:SetOwner( self.owner ) -- this sets you as the person who made the explosion
+					explode:Spawn() --this actually spawns the explosion
+					explode:SetKeyValue( "iMagnitude", "80" ) --the damage
+					explode:SetKeyValue( "iRadiusOverride", "300" ) --the rad
 					explode:Fire( "Explode", 0, 0 )
 					
 					self.Entity:Remove()

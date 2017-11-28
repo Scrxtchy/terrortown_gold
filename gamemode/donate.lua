@@ -1,83 +1,83 @@
-// 1 - Batman skin
-// 2 - SekCobra Skin
-// 3 - Neo Combine
-// 4 - Dipsy
-// 5 - creeper
-// 6 - stormtrooper
-// 7 - barney
-// 8 - warhammer
-// 9 - Suigintou -- now suited
-// 10 - asw model
-// 11 - fallout
-// 12 - boba fett
-// 13 - michael jordan
-// 14 - fleshpound
-// 15 - gingerbread man
-// 16 - osama
-// 17 - krystal
-// 18 - konata
-// 19 - 2142
-// 20 - barney_postal
-// 21 - zelda
-// 22 - zombie
-// 23 - solomon
-// 24 - gaarus
-// 25 - potter
-// 26 - bison
-// 27 - skeleton NOW spiderman
-// 28 - hitler
-// 29 - libertyprime
-// 30 - chrome robocop
-// 32 - billy mays
-// 34 - box man now superman
-// 35 - postaldude
-// 36 - soviet gasmask
-// 37 - doomguy
-// 38 - joker
-// 39 - CJ
-// 40 - fat black guy
+-- 1 - Batman skin
+-- 2 - SekCobra Skin
+-- 3 - Neo Combine
+-- 4 - Dipsy
+-- 5 - creeper
+-- 6 - stormtrooper
+-- 7 - barney
+-- 8 - warhammer
+-- 9 - Suigintou -- now suited
+-- 10 - asw model
+-- 11 - fallout
+-- 12 - boba fett
+-- 13 - michael jordan
+-- 14 - fleshpound
+-- 15 - gingerbread man
+-- 16 - osama
+-- 17 - krystal
+-- 18 - konata
+-- 19 - 2142
+-- 20 - barney_postal
+-- 21 - zelda
+-- 22 - zombie
+-- 23 - solomon
+-- 24 - gaarus
+-- 25 - potter
+-- 26 - bison
+-- 27 - skeleton NOW spiderman
+-- 28 - hitler
+-- 29 - libertyprime
+-- 30 - chrome robocop
+-- 32 - billy mays
+-- 34 - box man now superman
+-- 35 - postaldude
+-- 36 - soviet gasmask
+-- 37 - doomguy
+-- 38 - joker
+-- 39 - CJ
+-- 40 - fat black guy
 
 
-//aDonators = {}
-//aDonators["STEAM_0:0:10662109"] = 1; // Waals Vander
-////aDonators["STEAM_0:0:16780833"] = 2; // SekCobra
-//aDonators["STEAM_0:1:25827979"] = 3; // NOD
-//aDonators["STEAM_0:0:15241399"] = 4; // Squarebob/Crash
-//aDonators["STEAM_0:0:5123217"] = 5; // budspoonce
-//aDonators["STEAM_0:0:11154803"] = 6; // starpluck
-//aDonators["STEAM_0:1:13294521"] = 7; // icemaz
-//aDonators["STEAM_0:1:6991976"] = 8; // foxisus
-//aDonators["STEAM_0:0:24561765"] = 9; //inacio
-//aDonators["STEAM_0:1:15945265"] = 10; // elizer
-//aDonators["STEAM_0:0:25611961"] = 11; // rampageturke
-//aDonators["STEAM_0:1:433923"] = 12; // strider
-//aDonators["STEAM_0:1:6052828"] = 13; // absinthe
-//aDonators["STEAM_0:1:13386915"] = 14; // dr derek
-//aDonators["STEAM_0:1:20014869"] = 15; // sottalytober
-//aDonators["STEAM_0:0:1181318"] = 16; // rilez
-//aDonators["STEAM_0:0:12629346"] = 17; // batmoutarde
-//aDonators["STEAM_0:1:10822487"] = 18; // dickheadhipster
-//aDonators["STEAM_0:1:16889825"] = 19; // wplayer
-//aDonators["STEAM_0:0:3627546"] = 20; // postal
-//aDonators["STEAM_0:0:18823770"] = 21; // alienfanatic
-//aDonators["STEAM_0:1:14647903"] = 22; // Jones	
-//aDonators["STEAM_0:1:10499372"] = 23; // Jaanus
-//aDonators["STEAM_0:1:5329312"] = 24; // t2lgoose
-//aDonators["STEAM_0:1:25065249"] = 25; // theforeigner
-//aDonators["STEAM_0:1:19291688"] = 27; // natrox
-//aDonators["STEAM_0:0:13767019"] = 28; // jim
-//aDonators["STEAM_0:1:5902503"] = 29; // redback3
-//aDonators["STEAM_0:0:13366632"] = 30; // davidofmk
-//aDonators["STEAM_0:0:6938520"] = 31; // onion
-//aDonators["STEAM_0:1:15450577"] = 32; // LasPlagas
-//aDonators["STEAM_0:1:13446132"] = 33; // conro
-//aDonators["STEAM_0:0:5400054"] = 34; // vent
-//aDonators["STEAM_0:0:4701298"] = 35; // chuz
-//aDonators["STEAM_0:1:9769230"] = 36; // mercz
-//aDonators["STEAM_0:1:3880"] = 37; // nomadic
-//aDonators["STEAM_0:1:6699149"] = 38; // stepthroat
-//aDonators["STEAM_0:1:16612480"] = 39; // smurfy
-//aDonators["STEAM_0:0:16054975"] = 40; // ollih
+--aDonators = {}
+--aDonators["STEAM_0:0:10662109"] = 1; -- Waals Vander
+----aDonators["STEAM_0:0:16780833"] = 2; -- SekCobra
+--aDonators["STEAM_0:1:25827979"] = 3; -- NOD
+--aDonators["STEAM_0:0:15241399"] = 4; -- Squarebob/Crash
+--aDonators["STEAM_0:0:5123217"] = 5; -- budspoonce
+--aDonators["STEAM_0:0:11154803"] = 6; -- starpluck
+--aDonators["STEAM_0:1:13294521"] = 7; -- icemaz
+--aDonators["STEAM_0:1:6991976"] = 8; -- foxisus
+--aDonators["STEAM_0:0:24561765"] = 9; --inacio
+--aDonators["STEAM_0:1:15945265"] = 10; -- elizer
+--aDonators["STEAM_0:0:25611961"] = 11; -- rampageturke
+--aDonators["STEAM_0:1:433923"] = 12; -- strider
+--aDonators["STEAM_0:1:6052828"] = 13; -- absinthe
+--aDonators["STEAM_0:1:13386915"] = 14; -- dr derek
+--aDonators["STEAM_0:1:20014869"] = 15; -- sottalytober
+--aDonators["STEAM_0:0:1181318"] = 16; -- rilez
+--aDonators["STEAM_0:0:12629346"] = 17; -- batmoutarde
+--aDonators["STEAM_0:1:10822487"] = 18; -- dickheadhipster
+--aDonators["STEAM_0:1:16889825"] = 19; -- wplayer
+--aDonators["STEAM_0:0:3627546"] = 20; -- postal
+--aDonators["STEAM_0:0:18823770"] = 21; -- alienfanatic
+--aDonators["STEAM_0:1:14647903"] = 22; -- Jones	
+--aDonators["STEAM_0:1:10499372"] = 23; -- Jaanus
+--aDonators["STEAM_0:1:5329312"] = 24; -- t2lgoose
+--aDonators["STEAM_0:1:25065249"] = 25; -- theforeigner
+--aDonators["STEAM_0:1:19291688"] = 27; -- natrox
+--aDonators["STEAM_0:0:13767019"] = 28; -- jim
+--aDonators["STEAM_0:1:5902503"] = 29; -- redback3
+--aDonators["STEAM_0:0:13366632"] = 30; -- davidofmk
+--aDonators["STEAM_0:0:6938520"] = 31; -- onion
+--aDonators["STEAM_0:1:15450577"] = 32; -- LasPlagas
+--aDonators["STEAM_0:1:13446132"] = 33; -- conro
+--aDonators["STEAM_0:0:5400054"] = 34; -- vent
+--aDonators["STEAM_0:0:4701298"] = 35; -- chuz
+--aDonators["STEAM_0:1:9769230"] = 36; -- mercz
+--aDonators["STEAM_0:1:3880"] = 37; -- nomadic
+--aDonators["STEAM_0:1:6699149"] = 38; -- stepthroat
+--aDonators["STEAM_0:1:16612480"] = 39; -- smurfy
+--aDonators["STEAM_0:0:16054975"] = 40; -- ollih
 
 
 function donationGetCustomModel(ply,mdl)
@@ -106,8 +106,8 @@ function donationGetCustomModel(ply,mdl)
 		ply:ChatPrint("Using special playermodel: Space Marine")
 		return "models/player/spacemarine_veteran.mdl"
 	elseif (ply.Donation == 9) then 
-		//ply:ChatPrint("Using special playermodel: suigintou")
-		//return "models/player/suigintou.mdl"
+		--ply:ChatPrint("Using special playermodel: suigintou")
+		--return "models/player/suigintou.mdl"
 		ply:ChatPrint("Using special playermodel: Suited Citizen")
 		return "models/player/suits/male_07.mdl"
 	elseif (ply.Donation == 10) then 
@@ -115,7 +115,7 @@ function donationGetCustomModel(ply,mdl)
 		return "models/player/samzanemesis/marineofficer.mdl"
 	elseif (ply.Donation == 11) then 
 		ply:ChatPrint("Using special playermodel: Fallout")
-		return "models/player/fallout_3/tesla_power_armor.mdl" // - Replaced
+		return "models/player/fallout_3/tesla_power_armor.mdl" -- - Replaced
 	elseif (ply.Donation == 12) then 
 		ply:ChatPrint("Using special playermodel: Boba Fett")
 		return "models/bobafett_tfu.mdl"
@@ -161,13 +161,13 @@ function donationGetCustomModel(ply,mdl)
 		ply:ChatPrint("Using special playermodel: HarryPotter")
 		return "models/harry/harry_potter.mdl"
 	elseif (ply.Donation == 26) then 
-		//ply:ChatPrint("Using special playermodel: Bison")
-		//return "models/m.dyson.mdl"
+		--ply:ChatPrint("Using special playermodel: Bison")
+		--return "models/m.dyson.mdl"
 	elseif (ply.Donation == 27) then 
-		//ply:ChatPrint("Using special playermodel: Skeleton")
-		//return "models/skeleton.mdl"
-		//ply:ChatPrint("Using special playermodel: NSA")
-		//return "models/player/nsa_agent.mdl"
+		--ply:ChatPrint("Using special playermodel: Skeleton")
+		--return "models/skeleton.mdl"
+		--ply:ChatPrint("Using special playermodel: NSA")
+		--return "models/player/nsa_agent.mdl"
 		ply:ChatPrint("Using special playermodel: Spiderman")
 		return "models/Spiderman/spiderman.mdl"
 	elseif (ply.Donation == 28) then 
@@ -186,8 +186,8 @@ function donationGetCustomModel(ply,mdl)
 		ply:ChatPrint("Using special playermodel: billy mays")
 		return "models/player/billymays.mdl"
 	elseif (ply.Donation == 33) then 
-		//ply:ChatPrint("Using special playermodel: robo")
-		//return "models/player/mp/robo/robo.mdl"
+		--ply:ChatPrint("Using special playermodel: robo")
+		--return "models/player/mp/robo/robo.mdl"
 		ply:ChatPrint("Using special playermodel: legion")
 		return "models/slash/legion/legion.mdl"
 	elseif (ply.Donation == 34) then 
@@ -197,8 +197,8 @@ function donationGetCustomModel(ply,mdl)
 		ply:ChatPrint("Using special playermodel: dude_player")
 		return "models/dude_player.mdl"
 	elseif (ply.Donation == 36) then 
-		//ply:ChatPrint("Using special playermodel: sovietquarantine")
-		//return "models/player/sovietquarantine.mdl"
+		--ply:ChatPrint("Using special playermodel: sovietquarantine")
+		--return "models/player/sovietquarantine.mdl"
 		ply:ChatPrint("Using special playermodel: Subzero")
 		return "models/player/slow/amberlyn/mkvsdcu/subzero/slow.mdl"
 	elseif (ply.Donation == 37) then 
@@ -250,7 +250,7 @@ end
  
 hook.Add( "PlayerSpawn", "donateSpawn", donateSpawn )
 
-//SekCobra Visor
+--SekCobra Visor
 local state = 1;
 function PlayerSetSEKCobraVisor( ply )
 	if state > 0 then
@@ -269,17 +269,17 @@ end
 concommand.Add("cobra_visor", PlayerSetSEKCobraVisor)
 
 
-//Models
-//Ironman
+--Models
+--Ironman
 
 AddDir("models/Batman")
 AddDir("materials/models/Batman")
 
-//SekCobra
+--SekCobra
 AddDir("materials/models/sekcobra")
 AddDir("models/sekcobra")
 
-//Neo Combine player
+--Neo Combine player
 AddDir("materials/models/characters/neoheavy")
 AddFile("models/player/neo_heavy.dx80.vtx")
 AddFile("models/player/neo_heavy.dx90.vtx")
@@ -289,24 +289,24 @@ AddFile("models/player/neo_heavy.phy")
 AddFile("models/player/neo_heavy.sw.vtx")
 AddFile("models/player/neo_heavy.vvd")
 
-//Dipsy
+--Dipsy
 AddDir("materials/models/player/dipsy_hl2mp")
 AddDir("models/player/dipsy_hl2mp_player")
 
-//creeper
+--creeper
 AddDir("materials/jessev92")
 AddDir("models/jessev92")
 
-//stormtrooper
+--stormtrooper
 AddDir("materials/models/player/b4p")
 AddDir("models/player/b4p")
 
-//barny
+--barny
 AddDir("materials/models/barney")
 AddDir("materials/detail")
 AddDir("models/player/hl1")
 
-//spacemarine
+--spacemarine
 AddDir("materials/models/spacemarine")
 AddFile("models/player/spacemarine_veteran.dx80.vtx")
 AddFile("models/player/spacemarine_veteran.dx90.vtx")
@@ -316,29 +316,29 @@ AddFile("models/player/spacemarine_veteran.phy")
 AddFile("models/player/spacemarine_veteran.sw.vtx")
 AddFile("models/player/spacemarine_veteran.vvd")
 
-//suigintou
-/*AddDir("materials/models/player/suigintou")
+--suigintou
+--[[AddDir("materials/models/player/suigintou")
 AddFile("models/player/suigintou.dx80.vtx")
 AddFile("models/player/suigintou.dx90.vtx")
 AddFile("models/player/suigintou.xbox.vtx")
 AddFile("models/player/suigintou.mdl")
 AddFile("models/player/suigintou.phy")
 AddFile("models/player/suigintou.sw.vtx")
-AddFile("models/player/suigintou.vvd")*/
+AddFile("models/player/suigintou.vvd")]]
 AddDir("materials/models/humans/jackntie")
 AddDir("models/player/suits")
 
-//asw
+--asw
 AddDir("materials/models/player/male")
 AddDir("models/player/samzanemesis")
 
-//fallout
-//AddDir("materials/models/player/dmgn")
-//AddDir("models/player/dmgn")
+--fallout
+--AddDir("materials/models/player/dmgn")
+--AddDir("models/player/dmgn")
 AddDir("models/player/fallout_3")
 AddDir("materials/models/player/slow/fallout_3")
 
-//boba fett
+--boba fett
 AddDir("materials/models/ryan7259")
 AddFile("models/bobafett_tfu.dx80.vtx")
 AddFile("models/bobafett_tfu.dx90.vtx")
@@ -348,29 +348,29 @@ AddFile("models/bobafett_tfu.phy")
 AddFile("models/bobafett_tfu.sw.vtx")
 AddFile("models/bobafett_tfu.vvd")
 
-//michael jordan
+--michael jordan
 AddDir("materials/nba2k11")
 AddDir("models/nba2k11")
 
-///fleshpound
+--/fleshpound
 AddFile("materials/effects/black.vtf")
 AddFile("models/m_all.mdl")
 AddDir("models/player/slow/fleshpound")
 AddDir("materials/models/player/slow/fleshpound")
 
-///gbread
+--/gbread
 AddDir("materials/models/gingerbread")
 AddDir("models/gingerbread")
 
-//osama
+--osama
 AddDir("materials/jessev92")
 AddDir("models/jessev92")
 
-//krystal
+--krystal
 AddDir("models/krystal")
 AddDir("materials/models/krystal")
 
-//konata
+--konata
 AddDir("materials/konata")
 AddFile("models/player/konatap.dx80.vtx")
 AddFile("models/player/konatap.dx90.vtx")
@@ -379,7 +379,7 @@ AddFile("models/player/konatap.phy")
 AddFile("models/player/konatap.sw.vtx")
 AddFile("models/player/konatap.vvd")
 
-//2142
+--2142
 AddDir("materials/models/europee_orange1")
 AddFile("models/Europee_orange1.dx80.vtx")
 AddFile("models/Europee_orange1.dx90.vtx")
@@ -388,11 +388,11 @@ AddFile("models/Europee_orange1.phy")
 AddFile("models/Europee_orange1.sw.vtx")
 AddFile("models/Europee_orange1.vvd")
 
-//barney
+--barney
 AddDir("models/player/posta2")
 AddDir("materials/models/player/posta2")
 
-//zelda
+--zelda
 AddDir("materials/models/zelda")
 AddFile("models/player/zelda.dx80.vtx")
 AddFile("models/player/zelda.dx90.vtx")
@@ -401,29 +401,29 @@ AddFile("models/player/zelda.phy")
 AddFile("models/player/zelda.sw.vtx")
 AddFile("models/player/zelda.vvd")
 
-//zombie
+--zombie
 AddDir("models/player/hl1")
 AddDir("materials/models/zombie")
 
-//solomon
+--solomon
 AddDir("models/player/jaanus")
 AddDir("materials/models/player/jaanus")
-//garrus
+--garrus
 AddDir("materials/models/slash")
 AddDir("models/slash")
-//harry
+--harry
 AddDir("materials/models/harry")
 AddDir("models/harry")
-//nsa
-/*AddDir("materials/models/player/nsa")
+--nsa
+--[[AddDir("materials/models/player/nsa")
 AddFile("models/player/nsa_agent.dx80.vtx")
 AddFile("models/player/nsa_agent.dx90.vtx")
 AddFile("models/player/nsa_agent.xbox.vtx")
 AddFile("models/player/nsa_agent.mdl")
 AddFile("models/player/nsa_agent.phy")
 AddFile("models/player/nsa_agent.sw.vtx")
-AddFile("models/player/nsa_agent.vvd")*/
-//hitler
+AddFile("models/player/nsa_agent.vvd")]]
+--hitler
 AddDir("materials/models/humans/Hitlerman")
 AddDir("materials/models/humans/male/Hitlerman")
 AddFile("models/player/hitler.dx80.vtx")
@@ -433,7 +433,7 @@ AddFile("models/player/hitler.phy")
 AddFile("models/player/hitler.sw.vtx")
 AddFile("models/player/hitler.vvd")
 AddFile("models/player/hitler.xbox.vtx")
-//libertyprime
+--libertyprime
 
 AddFile("materials/models/player/libertyprimebody_d.vmt")
 AddFile("materials/models/player/libertyprimebody_d.vtf")
@@ -450,70 +450,70 @@ AddFile("models/player/sam.phy")
 AddFile("models/player/sam.sw.vtx")
 AddFile("models/player/sam.vvd")
 
-//chrome robocop
+--chrome robocop
 AddDir("models/player/robocop")
 AddDir("models/player/robocop_chrome")
 AddDir("materials/models/player/slow/robocop_chrome")
 
-//renamon
+--renamon
 AddModel("models/player/renamon")
 AddDir("materials/models/renamon2009")
 
-//billymays
+--billymays
 AddModel("models/player/billymays")
 AddDir("materials/models/player/billy")
 AddDir("materials/models/billymays")
 
-//robo
-//AddDir("models/player/mp/robo")
-//AddDir("materials/models/player/mp/robo")
+--robo
+--AddDir("models/player/mp/robo")
+--AddDir("materials/models/player/mp/robo")
 
-//box
-/*AddModel("models/player/danboard")
+--box
+--[[AddModel("models/player/danboard")
 AddFile("models/player/danboard_arm_leg_sheet.vmt")
 AddFile("models/player/danboard_arm_leg_sheet.vtf")
 AddFile("models/player/danboard_body_sheet.vmt")
 AddFile("models/player/danboard_body_sheet.vtf")
 AddFile("models/player/danboard_head_sheet.vmt")
-AddFile("models/player/danboard_head_sheet.vtf")*/
+AddFile("models/player/danboard_head_sheet.vtf")]]
 
-//spiderman
+--spiderman
 AddDir("materials/spiderman")
 AddDir("models/Spiderman")
 
-//leigon
+--leigon
 AddDir("materials/models/slash/legion")
 AddDir("models/slash/legion")
 
 
-//super
+--super
 AddDir("materials/models/Bizyer/slow/jamis/mkvsdcu/superman")
 AddDir("models/Bizyer/slow/jamis/mkvsdcu/superman")
 
-//postal
+--postal
 AddModel("models/dude_player")
 AddDir("materials/models/dude")
 
-//gasmask
-//AddModel("models/player/sovietquarantine")
-//AddDir("materials/models/comask")
+--gasmask
+--AddModel("models/player/sovietquarantine")
+--AddDir("materials/models/comask")
 
-//doomguy
+--doomguy
 AddModel("models/player/doomguy")
 AddDir("materials/models/doomguy")
 
-//joker
+--joker
 AddDir("models/player/slow/jamis/mkvsdcu/joker")
 AddDir("materials/models/player/slow/jamis/mkvsdcu/joker")
-//cj
+--cj
 AddDir("models/francis115/carljohnson")
 AddDir("materials/models/francis115/cj")
 
-//Subzero
+--Subzero
 AddDir("models/player/slow/amberlyn/mkvsdcu/subzero")
 AddDir("materials/models/player/slow/amberlyn/mkvsdcu/subzero")
 
-//fat black guy
+--fat black guy
 AddDir("models/player/slow/amberlyn/re5/fat_majini")
 AddDir("materials/models/player/slow/amberlyn/re5/fat_majini")
 

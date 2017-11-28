@@ -25,7 +25,7 @@ function ENT:Initialize()
     self:PhysicsInit( SOLID_VPHYSICS )
 	local phys = self:GetPhysicsObject();
 	if (IsValid(phys)) then 
-	//phys:EnableGravity(false) 
+	--phys:EnableGravity(false) 
 	phys:Wake()
 	end
 	

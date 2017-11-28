@@ -62,7 +62,7 @@ local function RoundedMeter( bs, x, y, w, h, color)
 end
 
 ---- The bar painting is loosely based on:
----- http://wiki.garrysmod.com/?title=Creating_a_HUD
+---- http:--wiki.garrysmod.com/?title=Creating_a_HUD
 
 -- Paints a graphical meter bar
 local function PaintBar(x, y, w, h, colors, value)

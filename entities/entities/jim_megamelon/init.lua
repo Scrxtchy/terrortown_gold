@@ -94,8 +94,8 @@ if (pitch > 1) then
 	pitch = math.Clamp(1-math.abs(pitch),0,1)
 	pitch = minPitch+(pitch*(maxPitch-minPitch))
 	self:EmitSound(self.SoundName , self.SoundVol, math.Clamp(pitch,0,255))
-	//self.SoundPatch:Stop()
-	//self.SoundPatch:PlayEx(1,pitch)
+	--self.SoundPatch:Stop()
+	--self.SoundPatch:PlayEx(1,pitch)
 	return
 end
 
@@ -105,14 +105,14 @@ if (pitch < 1) then
 	pitch = (1-pitch)
 	pitch = minPitch+(pitch*(maxPitch-minPitch))
 	self:EmitSound(self.SoundName, self.SoundVol, math.Clamp(pitch,0,255))
-	//self.SoundPatch:Stop()
-	//self.SoundPatch:PlayEx(1,pitch)
+	--self.SoundPatch:Stop()
+	--self.SoundPatch:PlayEx(1,pitch)
 	return
 end
 
 	self.Entity:EmitSound( self.SoundName, self.SoundVol, 100)
-	//self.SoundPatch:Stop()
-	//self.SoundPatch:PlayEx(1,100)
+	--self.SoundPatch:Stop()
+	--self.SoundPatch:PlayEx(1,100)
 end
 
 function ENT:PhysicsCollide( data, physobj )

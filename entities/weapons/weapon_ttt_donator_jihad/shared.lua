@@ -1,4 +1,4 @@
-//Jihad Bomb
+--Jihad Bomb
 
 if SERVER then
    AddCSLuaFile( "shared.lua" )
@@ -7,7 +7,7 @@ end
 if CLIENT then
    SWEP.PrintName = "Suicide Bomber"
    SWEP.Slot = 1
-   //SWEP.Icon = ""
+   --SWEP.Icon = ""
    SWEP.DrawCrosshair   = false
    SWEP.ViewModelFOV    = 82
    SWEP.ViewModelFlip   = false
@@ -37,7 +37,7 @@ local bombSound			= Sound("siege/big_explosion.wav")
 SWEP.ScreamPatch 		= nil
 
 SWEP.Exploded = false
-SWEP.BombStage = 0 // 0 - Ready, 1 - Screaming
+SWEP.BombStage = 0 -- 0 - Ready, 1 - Screaming
 SWEP.PendingExplosion = false
 SWEP.StartExplode = 0
 SWEP.ExplodeMinTime = 2.5

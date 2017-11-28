@@ -6,7 +6,7 @@ end
 
 ---- TTT SPECIAL EQUIPMENT FIELDS
 
-SWEP.PlayerSpeedMod = 1 //Multiply the player speed by this amount when they have this weapon active.
+SWEP.PlayerSpeedMod = 1 --Multiply the player speed by this amount when they have this weapon active.
 SWEP.DropOnDeath = true
 
 -- This must be set to one of the WEAPON_ types in TTT weapons for weapon

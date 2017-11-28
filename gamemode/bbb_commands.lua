@@ -103,7 +103,7 @@ function jim_c4(ply,command,arg)
 	
 	local entphys = ent:GetPhysicsObject();
 	if entphys:IsValid() then
-		//entphys:EnableMotion(false);
+		--entphys:EnableMotion(false);
 		entphys:Sleep()
 	end
 	
@@ -197,7 +197,7 @@ function jim_bowling(ply,command,arg)
 			ply:ChatPrint("Setting up "..v:Nick().."\n")
 			v:SetVelocity(Vector(0,0,0))
 			v:SetModel("models/mixerman3d/bowling/bowling_pin.mdl")
-			//v:Freeze( true )
+			--v:Freeze( true )
 			v:StripWeapons()
 			v:StripAmmo()
 			v:SetPos(traceRes.HitPos)

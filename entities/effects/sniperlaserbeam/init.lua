@@ -95,7 +95,7 @@ function EFFECT:GetTracerShootPosAng( Position, Ent, Attachment )
 	if (!Ent:IsValid()) then return Position, Vector(0,0,1) end
 	if (!Ent:IsWeapon()) then return Position, Vector(0,0,1) end
 
-	// Shoot from the viewmodel
+	-- Shoot from the viewmodel
 	if ( Ent:IsCarriedByLocalPlayer() && GetViewEntity() == LocalPlayer() ) then
 	
 		local ViewModel = LocalPlayer():GetViewModel()
@@ -111,7 +111,7 @@ function EFFECT:GetTracerShootPosAng( Position, Ent, Attachment )
 			
 		end
 	
-	// Shoot from the world model
+	-- Shoot from the world model
 	else
 	
 

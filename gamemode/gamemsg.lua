@@ -287,7 +287,7 @@ local function LastWords(ply, cmd, args)
          local words = string.Trim(args[3])
 
          -- nothing of interest
-         //if string.len(words) < 2 then return end
+         --if string.len(words) < 2 then return end
 
          if ttt_lastwords:GetBool() or ply.death_type == KILL_FALL then
             LastWordsMsg(ply, words)

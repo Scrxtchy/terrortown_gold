@@ -71,10 +71,10 @@ function PROPSPEC_A.Start(ply, ent)
    if (ent:GetClass() == "prop_physics_multiplayer") then PROPSPEC_A.Start_Copy(ply, ent); return; end
    if (ent:GetClass() == "prop_physics_respawnable") then PROPSPEC_A.Start_Copy(ply, ent); return; end
    if (ent:GetClass() == "prop_dynamic") then PROPSPEC_A.Start_Copy(ply, ent); return; end
-   //if (ent:GetClass() == "func_breakable") then PROPSPEC_A.Start_Copy(ply, ent); return; end
-   //if (ent:GetClass() == "func_physbox") then PROPSPEC_A.Start_Copy(ply, ent); return; end
+   --if (ent:GetClass() == "func_breakable") then PROPSPEC_A.Start_Copy(ply, ent); return; end
+   --if (ent:GetClass() == "func_physbox") then PROPSPEC_A.Start_Copy(ply, ent); return; end
    if (!ent:GetModel() || ent:GetModel() == "") then return end
-   //if (ent:GetClass() == "fish") then return; end
+   --if (ent:GetClass() == "fish") then return; end
    PROPSPEC_A.Start_Physics(ply, ent);
 end
 
@@ -106,7 +106,7 @@ function PROPSPEC_A.Start_Copy(ply, ent)
 	local newphys = IsValid(newent) and newent:GetPhysicsObject()
 	
 	if (IsValid(phys)) then
-		//newphys:SetMass(math.Clamp(phys:GetMass(),0,5000))
+		--newphys:SetMass(math.Clamp(phys:GetMass(),0,5000))
 		newphys:SetMass(phys:GetMass())
 		newphys:SetMaterial(phys:GetMaterial())
 	else
@@ -142,18 +142,18 @@ function PROPSPEC_A.Target(ply, ent, nearest)
 
    -- normally only specific whitelisted ent classes can be possessed, but
    -- custom ents can mark themselves possessable as well
-   //if (not ent.Allowpropspec) and (not IsWhitelistedClass(ent:GetClass())) then return end
+   --if (not ent.Allowpropspec) and (not IsWhitelistedClass(ent:GetClass())) then return end
    
-    //local phys = ent:GetPhysicsObject()
-    //if (not ValidEntity(phys)) or (not phys:IsMoveable()) then
-	//	ply:ChatPrint(Format("PropSpec: Attempted to control %s, but no phys data.",ent:GetClass())) 
-    //end
+    --local phys = ent:GetPhysicsObject()
+    --if (not ValidEntity(phys)) or (not phys:IsMoveable()) then
+	--	ply:ChatPrint(Format("PropSpec: Attempted to control %s, but no phys data.",ent:GetClass())) 
+    --end
    
-	/*if (nearest == 1) then 
+	--[[if (nearest == 1) then 
 		ply:ChatPrint(Format("PropSpec: Failed to find entity, using nearest ent (%s)",ent:GetClass())) 
 	else
 		ply:ChatPrint(Format("PropSpec: Taking control of entity. (%s)",ent:GetClass())) 
-	end*/
+	end]]
 
    PROPSPEC_A.Start(ply, ent)
 end
@@ -171,7 +171,7 @@ function PROPSPEC_A.End(ply)
    ply:ResetViewRoll()
    ply:SetNWEntity("spec_ent", NULL)
    ply:SetEyeAngles(viewAng);
-   //ply:SetPos(ent:GetPos());
+   --ply:SetPos(ent:GetPos());
 
    timer.Simple(0.1, function()
                         if IsValid(ply) then ply:ResetViewRoll() end
@@ -237,12 +237,12 @@ function PROPSPEC_A.Key_Door(ply,key)
 		ent:SetHealth(0)
 		ent:Remove()
 		
-		local explode = ents.Create( "env_explosion" ) //creates the explosion
+		local explode = ents.Create( "env_explosion" ) --creates the explosion
 		explode:SetPos( pos  )
-		explode:SetOwner( ply ) // this sets you as the person who made the explosion
-		explode:Spawn() //this actually spawns the explosion
-		explode:SetKeyValue( "iMagnitude", "10000" ) //the magnitude
-		explode:SetKeyValue( "iRadiusOverride", "250" ) //the magnitude
+		explode:SetOwner( ply ) -- this sets you as the person who made the explosion
+		explode:Spawn() --this actually spawns the explosion
+		explode:SetKeyValue( "iMagnitude", "10000" ) --the magnitude
+		explode:SetKeyValue( "iRadiusOverride", "250" ) --the magnitude
 		explode:SetKeyValue("spawnflags","828")
 		explode:Fire( "Explode", 0, 0 )
 		
@@ -313,11 +313,11 @@ function PROPSPEC_A.Key(ply, key)
 		if (!ent.frozen) then 
 			phys:EnableMotion(false)
 			ent.frozen = true
-			//ent:SetColor(0, 0, 255, 128)
+			--ent:SetColor(0, 0, 255, 128)
 		else
 			phys:EnableMotion(true)
 			ent.frozen = false	
-			//ent:SetColor(255,255,255,255)	
+			--ent:SetColor(255,255,255,255)	
 		end
 		
       return true
@@ -329,9 +329,9 @@ function PROPSPEC_A.Key(ply, key)
    end
 
    local pr = ply.propspec
-   //if pr.t > CurTime() then return true end
+   --if pr.t > CurTime() then return true end
 
-   //local m = math.min(150, phys:GetMass())
+   --local m = math.min(150, phys:GetMass())
    local m = phys:GetMass()
    local force = PROPSPEC_A_force:GetInt()
    if (ent:GetClass() == "prop_ragdoll") then force = force * 1.75 end
@@ -344,7 +344,7 @@ function PROPSPEC_A.Key(ply, key)
 	if key == IN_JUMP || key == IN_FORWARD || key == IN_BACK || key == IN_MOVELEFT || key == IN_MOVERIGHT then
 		phys:EnableMotion(true)
 		ent.frozen = false;
-		//ent:SetColor(255,255,255,255)	
+		--ent:SetColor(255,255,255,255)	
 	end
 
 	if key == IN_ATTACK2 then
@@ -378,7 +378,7 @@ function PROPSPEC_A.Key(ply, key)
 		end
 		if (string.find(ent:GetModel(),"barney.mdl")) then
 			local rand = math.random(1,2) 
-			//if (rand == 1) then ent:EmitSound("vo/npc/barney/ba_laugh01.wav", 100, 100) end
+			--if (rand == 1) then ent:EmitSound("vo/npc/barney/ba_laugh01.wav", 100, 100) end
 			if (rand == 1) then ent:EmitSound("cunt/barney.wav", 500, 100) end
 			if (rand == 2) then ent:EmitSound("vo/npc/barney/ba_laugh02.wav", 100, 100) end
 			
@@ -398,7 +398,7 @@ function PROPSPEC_A.Key(ply, key)
 		end	
 		if (string.find(ent:GetModel(),"pinkiepie.mdl")) then
 			local rand = math.random(1,6) 
-			//if (rand == 1) then ent:EmitSound("pp/pyro_autodejectedtie01.wav", 100, 100) end
+			--if (rand == 1) then ent:EmitSound("pp/pyro_autodejectedtie01.wav", 100, 100) end
 			if (rand == 2) then ent:EmitSound("pp/pyro_cheers01.wav", 100, 100) end
 			if (rand == 3) then ent:EmitSound("pp/pyro_go01.wav", 100, 100) end
 			if (rand == 4) then ent:EmitSound("pp/pyro_go01.wav", 100, 100) end
@@ -424,12 +424,12 @@ function PROPSPEC_A.Key(ply, key)
 		ent:SetHealth(0)
 		ent:Remove()
 		
-		local explode = ents.Create( "env_explosion" ) //creates the explosion
+		local explode = ents.Create( "env_explosion" ) --creates the explosion
 		explode:SetPos( pos  )
-		explode:SetOwner( ply ) // this sets you as the person who made the explosion
-		explode:Spawn() //this actually spawns the explosion
-		explode:SetKeyValue( "iMagnitude", "10000" ) //the magnitude
-		explode:SetKeyValue( "iRadiusOverride", "250" ) //the magnitude
+		explode:SetOwner( ply ) -- this sets you as the person who made the explosion
+		explode:Spawn() --this actually spawns the explosion
+		explode:SetKeyValue( "iMagnitude", "10000" ) --the magnitude
+		explode:SetKeyValue( "iRadiusOverride", "250" ) --the magnitude
 		explode:SetKeyValue("spawnflags","828")
 		explode:Fire( "Explode", 0, 0 )
 		
